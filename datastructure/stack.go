@@ -14,7 +14,7 @@ func NewStackInt(size int) *stackInt {
 
 func (s *stackInt) Pop() int {
 	item := s.data[s.size-1]
-	s.data = s.data[0 : s.size-1]
+	s.data[s.size-1] = 0
 	s.size--
 
 	return item
@@ -43,7 +43,7 @@ func NewStackBT(size int) *stackBT {
 
 func (s *stackBT) Pop() *BTNode {
 	item := s.data[s.size-1]
-	s.data = s.data[0 : s.size-1]
+	s.data[s.size-1] = nil
 	s.size--
 
 	return item
