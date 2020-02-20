@@ -1,7 +1,7 @@
 package datastructure
 
 type BTNode struct {
-	left  *BTNode
-	right *BTNode
-	data  int
+	Left  *BTNode
+	Right *BTNode
+	Data  int
 }

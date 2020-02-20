@@ -19,9 +19,9 @@ func TestStackInt(t *testing.T) {
 
 func TestStackBT(t *testing.T) {
 	stack := NewStackBT(10)
-	stack.Push(&BTNode{data: 1})
-	stack.Push(&BTNode{data: 2})
-	stack.Push(&BTNode{data: 3})
+	stack.Push(&BTNode{Data: 1})
+	stack.Push(&BTNode{Data: 2})
+	stack.Push(&BTNode{Data: 3})
 
 	for stack.Size() != 0 {
 		fmt.Println(stack.Pop())
